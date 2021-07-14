@@ -7,7 +7,8 @@
     "build:dev": "cross-env NODE_ENV=development webpack --progress",
     "build:pre": "cross-env NODE_ENV=production PRE_ENV=pre webpack --progress",
     "build:pro": "cross-env NODE_ENV=production webpack --progress",
-    "serve": "cross-env NODE_ENV=development SERVE_ENV=serve webpack serve --progress"
+    "serve": "cross-env NODE_ENV=development SERVE_ENV=serve webpack serve --progress",
+    "eslint": "eslint src --ext .js,.ts,.tsx,.jsx"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
     "css-loader": "^5.2.6",
     "css-minimizer-webpack-plugin": "^3.0.2",
     "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^5.3.1",
     "less": "^4.1.1",

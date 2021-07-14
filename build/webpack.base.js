@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 // const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -35,7 +34,7 @@ module.exports = {
     noParse: /jquery|lodash/,
     rules: [
       {
-        test: /\.(t,j)sx?$/,
+        test: /\.(t|j)sx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
       },
@@ -83,7 +82,7 @@ module.exports = {
         from: path.resolve(rootDir, 'public/static'), //要打包的静态资源目录地址
         to: path.resolve(rootDir, 'dist/static')
       }]
-    }),,
+    }),
     new ProgressBarPlugin({
       format: '  build [:bar] ' + chalk.green.bold(':percent') + ' (:elapsed seconds)',
       clear: false

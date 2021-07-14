@@ -13,5 +13,5 @@ npm i ts-loader -D
 - eslint 社区通用
 
 ```
-npm i eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser -D
+npm i eslint @typescript-eslint/eslint-plugin@latest @typescript-eslint/parser@latest eslint-plugin-react@latest -D
 ```

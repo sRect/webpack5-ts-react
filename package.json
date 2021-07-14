@@ -8,7 +8,7 @@
     "build:pre": "cross-env NODE_ENV=production PRE_ENV=pre webpack --progress",
     "build:pro": "cross-env NODE_ENV=production webpack --progress",
     "serve": "cross-env NODE_ENV=development SERVE_ENV=serve webpack serve --progress",
-    "eslint": "eslint src --ext .js,.ts,.tsx,.jsx"
+    "eslint": "eslint src --ext .js,.ts,.tsx,.jsx --fix"
   },
   "keywords": [],
   "author": "",
@@ -44,6 +44,9 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/runtime": "^7.13.10",
     "@babel/runtime-corejs3": "^7.13.10",
+    "@types/react": "^17.0.14",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.8",
     "core-js": "^3.10.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
